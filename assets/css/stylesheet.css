@@ -1,0 +1,66 @@
+@font-face { font-family: "OpenSans-Light"; src: url('../fonts/OpenSans-Light.ttf'); }
+@font-face { font-family: "OpenSans-Regular"; src: url('../fonts/OpenSans-Regular.ttf'); }
+@font-face { font-family: "Oswald-Regular"; src: url('../fonts/Oswald-Regular.ttf'); }
+
+body {
+	background-color: #121212;
+}
+
+.box {
+	margin-top: 100px;
+	background-color: #EFEFEF;
+	min-height: 200px;
+	border-radius: 5px;
+	padding: 20px;
+	padding-bottom:40px;
+	color: #000;
+}
+
+.box2 {
+	background-color:#211c18;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.header-text {
+	height: 100px;
+}
+h1.header {
+	font-family: "Oswald-Regular";
+	font-size: 60px;
+	text-transform: uppercase;
+	color:#FFF;
+}
+h1.header .left {
+	color: #FFF;
+	background-color:#FFF;
+	padding-left: 10px;
+	padding-right:10px;
+	border: solid 1px black;
+}
+h1.header .right {
+	color: #FFF;
+	background-color:black;
+	padding-left: 10px;
+	padding-right:10px;
+	border: solid 1px black;
+}
+form.vote {
+	width:300px;
+	margin:auto;
+	margin-top: 25px;
+}
+input.error {
+	border: solid 1px red;
+}
+.site {
+	margin:3px;
+	transition: all .3s ease-in-out;
+}
+.footer {
+	margin-top: 20px;
+	color:#444;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    vertical-align: middle;
+}
