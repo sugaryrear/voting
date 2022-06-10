@@ -1,0 +1,45 @@
+
+import java.sql.*;
+
+public class dbtest extends Database {
+
+    static final String HOST = "";
+    static final String USER = "";
+    static final String PASS = "";
+    static final String DATABASE = "vote";
+
+    private Connection conn;
+    private Statement stmt;
+
+
+    public dbtest() {
+        super(HOST,USER,PASS,DATABASE);
+    }
+
+
+    public void run(){
+        try {
+            if (!init()) {
+                return;
+            }
+
+
+            String name = "";
+
+            ResultSet rs = executeQuery("SELECT * FROM votes WHERE username='"+name+"'");
+
+            while (rs.next()) {
+
+                int claimed = rs.getInt("claimed");
+
+                System.out.println(name+" has "+(claimed == 1 ? "claimed" : "not claimed")+" their votes.");
+
+            }
+
+            destroyAll();
+        }catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+}
