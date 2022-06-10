@@ -9,3 +9,5 @@ During the creation of the ad there will also be unique API key that the admin m
 6) The variables are processed in the callback.php and if successful the credits are applied to the user in the mysql database.
 
 run the java program "dbtest" to test the program
+
+see it in action here: https://www.alora.io/vote/
