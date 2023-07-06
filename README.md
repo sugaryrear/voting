@@ -8,4 +8,3 @@ During the creation of the ad there will also be unique API key that the admin m
 5) Now once the user has successfully voted, 2 variables (the unique API key and the users IP address) are sent to the callback URL
 6) The variables are processed in the callback.php and if successful the credits are applied to the user in the mysql database.
 
-![webdev2](https://user-images.githubusercontent.com/78560906/177886775-9df3014b-f9dd-4c14-86a0-cb73c4daa2d5.png)
